@@ -1,0 +1,26 @@
+/**
+ * @TODO: Define the reducer for the threads state
+ */
+import { ActionType } from './action';
+
+function threadsReducer(threads = [], action = {}) {
+  switch (action.type) {
+    case ActionType.RECEIVE_THREADS:
+      return action.payload.threads;
+    case ActionType.ADD_THREAD:
+      return [action.payload.thread, ...threads];
+    default:
+      return threads;
+  }
+}
+
+function commentsReducer(comments = [], action = {}) {
+  switch (action.type) {
+    case ActionType.ADD_COMMENT_THREAD:
+      return [action.payload.comment, ...comments];
+    default:
+      return comments;
+  }
+}
+
+export { threadsReducer, commentsReducer };
