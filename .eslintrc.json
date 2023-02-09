@@ -21,7 +21,8 @@
     "plugins": [
         "react",
         "react-hooks",
-        "jest"
+        "jest",
+        "cypress"
     ],
     "rules": {
         "linebreak-style": "off",
