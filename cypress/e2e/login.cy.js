@@ -60,10 +60,10 @@ describe('Login spec', () => {
 
   it('should display homepage when email and password are correct', () => {
     // mengisi email
-    cy.get('input[placeholder="Email"]').type('rahman@gmail.com');
+    cy.get('input[placeholder="Email"]').type('ghufran@gmail.com');
 
     // mengisi password
-    cy.get('input[placeholder="Password"]').type('rahman');
+    cy.get('input[placeholder="Password"]').type('ghufran');
 
     // menekan tombol Login
     cy.get('button').contains(/^Login$/).click();
