@@ -23,7 +23,7 @@ function LoginPage() {
         <h2>
           Dicoding
           {' '}
-          <strong>Forum App.</strong>
+          <strong>Forum Aplikasi.</strong>
           {' '}
           <br />
         </h2>
