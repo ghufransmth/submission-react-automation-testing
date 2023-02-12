@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import LoginInput from '../components/LoginInput';
 import logo from '../assets/images/logoDicoding.png';
 import { asyncSetAuthUser } from '../states/authUser/action';
+import AnnounceBar from '../components/AnnounceBar';
 
 function LoginPage() {
   const dispatch = useDispatch(); // @TODO: get dispatch function from store
@@ -20,13 +21,7 @@ function LoginPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
       <article className="login-page__main">
-        <h2>
-          Dicoding
-          {' '}
-          <strong>Forum Aplikasi.</strong>
-          {' '}
-          <br />
-        </h2>
+        <AnnounceBar type="info" title="Dicoding" content="Forum Aplikasi." />
 
         <LoginInput login={onLogin} />
         <p>

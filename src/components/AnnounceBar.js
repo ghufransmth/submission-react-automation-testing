@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Container from './styled/Container';
 import Title from './styled/Title';
-import Button from './styled/Button';
 
 function AnnounceBar({
   title, content, ctaLabel, onClick, type,
@@ -31,13 +30,6 @@ function AnnounceBar({
       <Title>{title}</Title>
       <p>{content}</p>
 
-      <Button
-        backgroundColor={textColor[type]}
-        textColor={backgroundColor[type]}
-        onClick={onClick}
-      >
-        {ctaLabel}
-      </Button>
     </Container>
   );
 }
