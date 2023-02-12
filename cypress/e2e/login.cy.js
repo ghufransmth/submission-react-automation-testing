@@ -1,3 +1,5 @@
+/* eslint-disable jest/valid-expect */
+/* eslint-disable jest/expect-expect */
 /**
  * - Login spec
  *   - should display login page correctly
@@ -25,7 +27,7 @@ describe('Login spec', () => {
 
     // memverifikasi window.alert untuk menampilkan pesan dari API
     cy.on('window:alert', (str) => {
-      expect(str).to.equal('"id" is not allowed to be empty');
+      expect(str).to.equal('"email" is not allowed to be empty');
     });
   });
 
@@ -54,7 +56,7 @@ describe('Login spec', () => {
 
     // memverifikasi window.alert untuk menampilkan pesan dari API
     cy.on('window:alert', (str) => {
-      expect(str).to.equal('User ID or password is wrong');
+      expect(str).to.equal('Email or password is wrong');
     });
   });
 
