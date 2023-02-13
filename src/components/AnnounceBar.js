@@ -4,7 +4,7 @@ import Container from './styled/Container';
 import Title from './styled/Title';
 
 function AnnounceBar({
-  title, content, ctaLabel, onClick, type,
+  title, content, type,
 }) {
   const backgroundColor = {
     success: '#4caf50',
@@ -39,12 +39,8 @@ AnnounceBar.propTypes = {
   title: PropTypes.string.isRequired,
   /** The content of the announcement */
   content: PropTypes.string.isRequired,
-  /** Action when the CTA button is cli cked  */
-  onClick: PropTypes.func.isRequired,
   /** Type of announcement, it will change the color of the bar  */
   type: PropTypes.oneOf(['success', 'error', 'warning', 'info']).isRequired,
-  /** The label of the call to action button  */
-  ctaLabel: PropTypes.string.isRequired,
 };
 
 export default AnnounceBar;
