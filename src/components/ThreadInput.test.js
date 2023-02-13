@@ -64,7 +64,7 @@ describe('ThreadInput component', () => {
     await userEvent.click(postThreadButton);
 
     // Assert
-    expect(mockThread).toBeCalledWith(
+    expect(mockThread).toHaveBeenCalledWith(
       'titletest',
       'bodytest',
       '',
